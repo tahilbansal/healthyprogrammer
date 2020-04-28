@@ -15,7 +15,7 @@ def musiccontrol(write,stopper):
         pygame.mixer.music.stop()
 
 while(True):
-    if time.time() - initial_wat >= 10:
+    if time.time() - initial_wat >= 30*60:
         pygame.mixer.init()
         pygame.mixer.music.load('example.mp3')
         pygame.mixer.music.play()
@@ -23,7 +23,7 @@ while(True):
         print("Write drank to stop music")
         drank = input()
         musiccontrol(drank,"drank")
-    if time.time() - initial_eyes >= 35:
+    if time.time() - initial_eyes >= 35*60:
         pygame.mixer.init()
         pygame.mixer.music.load('example.mp3')
         pygame.mixer.music.play()
